@@ -1,0 +1,106 @@
+body{
+    margin: auto;
+}
+
+#indexWrap{
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu{
+    height: 100vh;
+    width: 50vw;
+    background: purple;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+.fade-layer.visible{
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    #indexWrap{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 150% 10%;
+        grid-template-areas: 
+        'hd'
+        'mn'
+        'ft';
+    }
+
+    .hd{
+        grid-area: hd;
+        background-color: goldenrod;
+        display: flex;
+    }
+
+    #logoWrap{
+        display: grid;
+        grid-template-columns: 64px 100px 156px;
+        grid-template-rows: 48px 32px ;
+        grid-template-areas: 
+        'll tp tp'
+        'll bt bt';
+
+    }
+
+    #logoLeft{
+        grid-area: ll;
+        padding: 10%;
+        margin-left: 10%;
+        margin-right: 0px;
+    }
+
+    #logoTop{
+        grid-area: tp;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #logoBot{
+        grid-area: bt;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .mn{
+        grid-area: mn;
+        background-color: greenyellow;
+    }
+
+    .ft{
+        grid-area: ft;
+        background-color: aquamarine;
+    }
+
+    .md48{
+        margin-top: 15px;
+        font-size: 64px !important;
+    }
+    
+}
