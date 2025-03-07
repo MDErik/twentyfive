@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Comfortaa:wght@300..700&display=swap');
+
 body{
     margin: auto;
 }
@@ -10,7 +12,7 @@ body{
 .menu{
     height: 100vh;
     width: 50vw;
-    background: purple;
+    background: #1E5341;
     position: fixed;
     top: 0;
     left: -90vw;
@@ -45,62 +47,91 @@ body{
 @media screen and (max-width: 500px) {
     #indexWrap{
         display: grid;
+        margin: 0;
+        padding: 0;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 150% 10%;
+        grid-template-rows: 15% auto 10%;
         grid-template-areas: 
         'hd'
         'mn'
         'ft';
     }
 
+    #phone_logo{
+        width: 85%;
+        height: 98%;
+
+    }
+
+    #phone_bckg{
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .glass{
+        margin-top: 15px;
+        margin-left: 20%;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid;
+        border-color: rgba(255, 255,255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        z-index: 3;
+        text-align: center;
+    }
+
     .hd{
         grid-area: hd;
-        background-color: goldenrod;
+        background-color: #1E5341;
         display: flex;
-    }
-
-    #logoWrap{
-        display: grid;
-        grid-template-columns: 64px 100px 156px;
-        grid-template-rows: 48px 32px ;
-        grid-template-areas: 
-        'll tp tp'
-        'll bt bt';
-
-    }
-
-    #logoLeft{
-        grid-area: ll;
-        padding: 10%;
-        margin-left: 10%;
-        margin-right: 0px;
-    }
-
-    #logoTop{
-        grid-area: tp;
-        padding: 0%;
-        margin: 0%;
-    }
-
-    #logoBot{
-        grid-area: bt;
-        padding: 0%;
-        margin: 0%;
     }
 
     .mn{
         grid-area: mn;
-        background-color: greenyellow;
+        background-color: #1E5341;
+        
     }
 
     .ft{
         grid-area: ft;
-        background-color: aquamarine;
+        background-color: #1E5341;
     }
 
     .md48{
-        margin-top: 15px;
-        font-size: 64px !important;
+        margin-top: 50%;
+        font-size: 48px !important;
+        color: #ffefdd;
+    }
+
+    .big_i_t{
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    .small_i_t{
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    #ft_text{
+        font-size: 12px;
+    }
+    #copyright{
+        text-align: center;
+    }
+    #ft_div{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-evenly;
     }
     
 }
+
+/* För dator ska jag använda fonten 'Big shoulders Inline' */
