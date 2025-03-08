@@ -44,6 +44,22 @@ body{
     display: block;
 }
 
+a:link{
+    text-decoration: none;
+    font-family: 'Comfortaa', serif;
+    color: #ffefdd;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #ffefdd;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #ffefdd;
+}
+
 @media screen and (max-width: 500px) {
     #indexWrap{
         display: grid;
@@ -130,6 +146,17 @@ body{
         margin-top: 5px;
         display: flex;
         justify-content: space-evenly;
+    }
+
+    #p_33{
+        position: absolute;
+        bottom: 50px;
+        align-items: center;
+    }
+    p_t_3{
+        font-family: 'Comfortaa', Serif;
+        font-weight: 700;
+        font-size: 19;
     }
     
 }
