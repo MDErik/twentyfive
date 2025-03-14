@@ -4,10 +4,6 @@ body{
     margin: auto;
 }
 
-#indexWrap{
-    width: 100vw;
-    height: 100vh;
-}
 
 .menu{
     height: 100vh;
@@ -61,7 +57,10 @@ a:visited{
 }
 
 @media screen and (max-width: 500px) {
+
     #indexWrap{
+        width: 100vw;
+        height: 100vh;
         display: grid;
         margin: 0;
         padding: 0;
@@ -69,9 +68,29 @@ a:visited{
         grid-template-rows: 15% auto 10%;
         grid-template-areas: 
         'hd'
-        'mn'
+        'imn'
         'ft';
     }
+
+    #aboutWrap{
+        display: grid;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: auto;
+        grid-template-rows: 15% 150% 10%;
+        grid-template-areas: 
+        'hd'
+        'amn'
+        'ft';
+    }
+
+    #amn{
+        grid-area: amn;
+        background-color: white;
+        
+    }
+
 
     #phone_logo{
         width: 85%;
@@ -110,7 +129,7 @@ a:visited{
     }
 
     .mn{
-        grid-area: mn;
+        grid-area: imn;
         background-color: #1E5341;
         
     }
@@ -153,7 +172,7 @@ a:visited{
         bottom: 50px;
         align-items: center;
     }
-    p_t_3{
+    .p_t_3{
         font-family: 'Comfortaa', Serif;
         font-weight: 700;
         font-size: 19;
@@ -162,3 +181,7 @@ a:visited{
 }
 
 /* För dator ska jag använda fonten 'Big shoulders Inline' */
+
+@media screen and (min-width: 501px) {
+    
+}
