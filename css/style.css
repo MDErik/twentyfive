@@ -20,7 +20,7 @@ body{
     position: fixed;
     top: 0;
     left: -90vw;
-    transition: left 0.3s;
+    transition: left 0.4s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
 }
@@ -127,7 +127,7 @@ a:visited{
         margin: 0;
         padding: 0;
         grid-template-columns: auto;
-        grid-template-rows: 15% 100% 10%;
+        grid-template-rows: 15% auto 10%;
         grid-template-areas: 
         'hd'
         'smn'
@@ -183,6 +183,7 @@ a:visited{
     .ft{
         grid-area: ft;
         background-color: #1E5341;
+        color: #ffefdd;
     }
 
     .md48{
@@ -280,6 +281,21 @@ a:visited{
         margin-left: 3%;
         margin-right: 3%;
         border-radius: 15px;
+    }
+    table {
+        width: 100%;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+    th, td {
+        padding: 12px;
+        border: 2px solid #1E5341;
+        border-radius: 10px;
+    }
+    th {
+        background-color: #1E5341;
+        color: white;
     }
     
 }
