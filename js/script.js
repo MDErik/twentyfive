@@ -12,6 +12,8 @@ function showMenu(){
     layer.classList.toggle("visible")
 }
 
+// Lånad kod nedanför
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
